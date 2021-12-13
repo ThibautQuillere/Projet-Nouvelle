@@ -1,0 +1,163 @@
+/*GENERAL*/
+body{
+    font-family: Payton One, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    margin: 0;
+}
+/* HEADER */
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 1200px; 
+    height: 50px;
+    margin: 0 auto;
+    align-items: center;
+    font-weight: bolder;
+    background-color: white;
+    padding: 10px;
+}
+
+header nav{
+    flex-grow: 1;
+    width: 1200px;
+}
+
+header ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 50px;
+}
+
+header li{
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin: 0px auto;
+    width: 150px;
+    text-align: center;
+    display:inline-block;
+}
+
+header li img.flag{
+    width: 50px;
+}
+
+header li a{
+    color: #172845;
+}
+
+header li.fond a:active{
+    color: white;
+    background-color: #172845;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header img{
+    width: 150px;
+}
+
+/* MAIN */
+main{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 0;
+}
+
+section{
+    padding-bottom: 50px;
+}
+    /* ACCUEIL */
+section.accueil img{
+    width: 1200px;
+}
+
+    /* NOUVELLE */
+    section.Nouvelle h2{
+        margin: 0;
+        padding: 40px 0;
+        width: 1200px;
+        text-align: center;
+    }
+
+    section.Nouvelle iframe.nouvelle-html{
+        border: #172845 solid 5px;
+    }
+
+    /* A PROPOS */
+section.A_Propos{
+    color: #172845;
+
+}
+
+section.A_Propos div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.A_Propos h2{
+    margin: 0;
+    padding: 40px 0;
+    width: 1200px;
+    text-align: center;
+}
+
+section.A_Propos article{
+    display: grid;
+    grid-template-areas: "photo titre" "photo role";
+    grid-template-columns: 210px auto;
+    grid-template-rows: auto auto;
+    padding: 20px 50px;
+    width: 500px;
+}
+
+section.A_Propos h3{
+    grid-area: titre;
+}
+
+section.A_Propos p{
+    grid-area: role;
+}
+
+section.A_Propos img{
+    width: 140px;
+    grid-area: photo;
+    padding: 10px;
+}
+
+section.A_Propos article span.Nom{
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #333;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    align-items: center;
+}
+
+footer a{
+    color: white;
+}
+
+footer p{
+    margin:20px
+}

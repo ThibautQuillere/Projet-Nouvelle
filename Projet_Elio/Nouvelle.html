@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> <!--Change the lang property to your web"s language-->
+
+	<head prefix="og: http://ogp.me/ns#">
+
+		<title>Nina et Elio</title>
+    	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval'">
+		<meta name="description" content=""> <!--Page description. No longer than 155 characters.-->
+		<meta name="keywords" content="">
+		<meta name="author" content=""> <!--Name of the author.-->
+
+		<!-- Third Party CSS Libraries -->
+
+		<!-- Monogatari CSS Libraries -->
+		<link rel="stylesheet" href="./engine/core/monogatari.css">
+		<link rel="stylesheet" href="./assets/style-nouvelle.css">
+
+		<!-- Third Party JavaScript Libraries -->
+
+		<!-- Monogatari JavaScript Libraries -->
+		<script src="./engine/debug/debug.js"></script>
+		<script src="./engine/core/monogatari.js"></script>
+		<script src="./js/options.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/main.js"></script>
+
+	</head>
+
+	<body>
+
+		<!-- Fallback when JavaScript is not available -->
+		<noscript>
+			<div class="middle text--center">
+				<h2>JavaScript Disabled or not Supported.</h2>
+				<small>To play this game, please enable JavaScript executing or use a different browser.</small>
+			</div>
+		</noscript>
+
+		<div id="monogatari">
+			<visual-novel>
+				<language-selection-screen></language-selection-screen>
+				<loading-screen></loading-screen>
+				<main-screen>
+					<main-menu></main-menu>
+				</main-screen>
+				<game-screen>
+					<dialog-log></dialog-log>
+					<text-box></text-box>
+					<quick-menu></quick-menu>
+				</game-screen>
+				<credits-screen></credits-screen>
+				<settings-screen></settings-screen>
+				<help-screen></help-screen>
+			</visual-novel>
+		</div>
+	</body>
+
+</html>
